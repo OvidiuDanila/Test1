@@ -3,14 +3,26 @@ package test;
 public class ClassA {
 
     public ClassA() {
+
         System.out.println("Constructor A");
+
+        }
+
+    public int decision(int n) {
+        if (n==0) {
+            System.out.println("A-Fals");
+        }
+        else {
+            System.out.println("A-Adevarat");
+        }
+        return n*20;
     }
 
     public static void main(String[] args) {
 
-        ClassA a = new ClassA(70);
+        ClassA ex = new ClassA();
         System.out.println("Nimic");
-        int n=3;
-        System.out.println(a.decision(n));
+        int x=7;
+        System.out.println(ex.decision(x));
     }
 }

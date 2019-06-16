@@ -7,12 +7,13 @@ public class ClassB extends ClassA {
         System.out.println("Constructor B");
     }
 
+    @Override
     public int decision(int n) {
         if (n==0) {
-            System.out.println("Fals");
+            System.out.println("B-Fals");
         }
         else {
-            System.out.println("Adevarat");
+            System.out.println("B-Adevarat");
         }
         return n*10;
     }
